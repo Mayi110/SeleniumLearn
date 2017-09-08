@@ -12,7 +12,7 @@ class Function(object):
     def logout_(self):
         self._driver.find_element_by_link_text("注销").click()
 
-    def search_key(self, key):
-        self._driver.find_element_by_id("kw").clear()
-        self._driver.find_element_by_id("kw").send_keys(key)
-        self._driver.find_element_by_id("su").click()
+    # def search_key(self, key):
+    #     self._driver.find_element_by_id("kw").clear()
+    #     self._driver.find_element_by_id("kw").send_keys(key)
+    #     self._driver.find_element_by_id("su").click()
