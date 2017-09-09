@@ -1,6 +1,6 @@
 from selenium import webdriver
 import unittest
-import HtmlTestRunner
+import HTMLTestRunner
 
 
 class LoginTest(unittest.TestCase):
@@ -19,11 +19,12 @@ class LoginTest(unittest.TestCase):
         self._driver.quit()
         print('test end')
 
+
 if __name__ == '__main__':
     test = unittest.TestSuite()
     test.addTest(LoginTest('test_case'))
     fp = open('C:\\Users\\admin\\Desktop\\report.html', 'wb')
-    runner = HtmlTestRunner(stream=fp,
+    runner = HTMLTestRunner(stream=fp,
                             title='测试报告',
                             description='用例执行情况:')
 
